@@ -1,3 +1,6 @@
 {
-    "gitdoc.enabled": true
+    "gitdoc.enabled": true,
+    "gitdoc.autoCommit": true,
+    "gitdoc.autoPush": true,
+    "gitdoc.commitMessageFormat": "YYYY-MM-DD HH:mm:ss"
 }
