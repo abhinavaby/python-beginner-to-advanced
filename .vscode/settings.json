@@ -4,5 +4,5 @@
     "gitdoc.autoPush": true,
     "gitdoc.autoCommitDelay": 20000,
     "gitdoc.commitMessageFormat": "Auto-save [${branch}] | ${date} at ${time}",
-    
+    "gitdoc.commitValidationLevel": "error"
 }
