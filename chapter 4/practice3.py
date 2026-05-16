@@ -3,7 +3,7 @@ l=[]
 for i in range(4):
     a=int(input("enter the number: "))
     l.append(a)
-sum=03
+sum=0
 for i in l:
     sum+=i
 print(f"the list : {l}")
