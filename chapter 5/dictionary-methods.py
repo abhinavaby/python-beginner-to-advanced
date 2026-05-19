@@ -46,6 +46,11 @@ print(f)
 print()
 print()
 
+# 6.len()
+
+print(len(mark))
+print()
+
 
 
 #---------------------from LLM-----------------------
