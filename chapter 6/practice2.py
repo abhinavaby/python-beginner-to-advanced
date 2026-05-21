@@ -10,7 +10,7 @@ for i in sub:
         c+=1
     total=total+i
 print(f"total:{total} c={c}")
-per=total/(len(sub)*100)
+per=total/(len(sub))
 if(c==3 and per>=40 ):
     print(f"the student have passed all subject with a overall percentage of {per}")
 else:
