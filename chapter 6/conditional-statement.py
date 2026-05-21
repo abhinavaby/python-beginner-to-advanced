@@ -9,15 +9,17 @@ if a >= 18:
 else:
     print("you cant vote.........")
 print("end of program")
+print("\n\n")
 
 
 #if else elif
 
 a=int(input("enter the age: "))
-if a >= 18:
-    print("you are eligibe for voting......")
-elif(a>100 and a<0):
+
+if(a>100 and a<0):
     print("you entered an invalid age......")
+elif( a >= 18):
+    print("you are eligibe for voting......")
 else:
     print("you cant vote.........")
 print("end of program")
