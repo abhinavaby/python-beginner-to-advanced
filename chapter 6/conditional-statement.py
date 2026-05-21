@@ -12,7 +12,7 @@ print("end of program")
 print("\n\n")
 
 
-#if else elif
+#if else elif ladder
 
 a=int(input("enter the age: "))
 
