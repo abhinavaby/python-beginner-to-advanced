@@ -22,3 +22,9 @@ print()
 l=[1,2,"abhinav",3.4,False]
 for i in l:
     print(i)
+print()
+
+#printing tuple elements
+a=(1,3,4,56,7,8)
+for i in a:
+    print(i)
