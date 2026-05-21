@@ -28,3 +28,10 @@ print()
 a=(1,3,4,56,7,8)
 for i in a:
     print(i)
+print()
+
+# itrating through string
+
+s="abhinav"
+for i in s:
+    print(i)
