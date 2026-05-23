@@ -22,7 +22,7 @@ print(f"Total Bill: ${final_bill}")
 # 3. FUNCTIONS WITHOUT A RETURN VALUE
 # ==========================================
 def say_hello():
-    print("Hello!")  # Prints to screen, but does not 'return' data
+    return ("Hello!")  # Prints to screen, but does not 'return' data
 
 
 result = say_hello()
