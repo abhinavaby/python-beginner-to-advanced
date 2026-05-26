@@ -1,9 +1,4 @@
-# saves the data in HDD rather than vanishing when the program is over
-# text file:txt,py,c,etc
-#binary file:jpg,dat,etc
-
-#reading a file
-f= open("first.txt")
+f=open("f.txt") # default mode read mode and provide error if file is not there
 data=f.read()
 print(data)
 f.close()
