@@ -1,3 +1,0 @@
-#9. Write a program to wipe out the content of a file using python.
-with open("wipe.txt","w") as f:
-    pass
