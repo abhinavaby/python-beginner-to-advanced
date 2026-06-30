@@ -1,0 +1,194 @@
+def myFunc():
+    # Function Definition:
+    # This function prints "Hello world!" when it is called.
+    print("Hello world!")
+
+
+# __name__ is a special built-in variable in Python.
+# It stores the name of the current module.
+
+# If this file is executed directly:
+#     __name__ == "__main__"
+#
+# If this file is imported into another Python file:
+#     __name__ == "filename"
+
+if __name__ == "__main__":
+    # This block executes ONLY when the file is run directly.
+
+    print("We are directly running this code")
+
+    # Call the function
+    myFunc()
+
+    # Print the value of __name__
+    print(__name__)
+
+
+"""
+Explanation
+===========
+
+1. Function Definition
+
+    def myFunc():
+        print("Hello world!")
+
+- Defines a function named 'myFunc'.
+- The function is stored in memory.
+- Nothing is printed until the function is called.
+
+-----------------------------------------------------
+
+2. if __name__ == "__main__":
+
+This is called the "main guard".
+
+Python automatically creates the variable __name__.
+
+Case 1: File is run directly
+
+    python main.py
+
+Python sets:
+
+    __name__ = "__main__"
+
+Condition:
+
+    if __name__ == "__main__":
+
+becomes
+
+    if "__main__" == "__main__":
+
+which is True.
+
+Therefore, everything inside the if block executes.
+
+-----------------------------------------------------
+
+3. Inside the if block
+
+print("We are directly running this code")
+
+Output:
+
+    We are directly running this code
+
+-----------------------------------------------------
+
+4. Function Call
+
+myFunc()
+
+Executes:
+
+    print("Hello world!")
+
+Output:
+
+    Hello world!
+
+-----------------------------------------------------
+
+5. Print __name__
+
+print(__name__)
+
+Since the file is executed directly:
+
+Output:
+
+    __main__
+
+-----------------------------------------------------
+
+Complete Output (Run Directly)
+
+We are directly running this code
+Hello world!
+__main__
+
+-----------------------------------------------------
+
+Case 2: File is Imported
+
+Suppose another file contains:
+
+    import main
+
+Then Python sets:
+
+    __name__ = "main"
+
+Now the condition becomes
+
+    if "main" == "__main__":
+
+which is False.
+
+Therefore, the entire if block is skipped.
+
+Nothing inside it executes.
+
+-----------------------------------------------------
+
+Why use if __name__ == "__main__" ?
+
+It prevents code from running automatically when the file
+is imported into another program.
+
+This allows the file to serve two purposes:
+1. Run as a standalone program.
+2. Be imported as a reusable module.
+
+-----------------------------------------------------
+
+Execution Flow
+
+Program Starts
+      │
+      ▼
+Function Defined
+      │
+      ▼
+Check:
+__name__ == "__main__" ?
+      │
+      ├── True (Run Directly)
+      │       │
+      │       ▼
+      │  Print:
+      │  "We are directly running this code"
+      │       │
+      │       ▼
+      │  Call myFunc()
+      │       │
+      │       ▼
+      │  Print:
+      │  Hello world!
+      │       │
+      │       ▼
+      │  Print:
+      │  __main__
+      │
+      └── False (Imported)
+              │
+              ▼
+      Skip the entire if block
+              │
+              ▼
+          Program Ends
+
+Key Point
+=========
+
+The statement:
+
+    if __name__ == "__main__":
+
+ensures that the code inside it runs ONLY when the file is
+executed directly, and NOT when it is imported into another
+Python program.
+"""
